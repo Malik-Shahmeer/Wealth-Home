@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WealthHome | Premium House Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-primary">
+              Wealth<span class="text-secondary">Home</span>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-primary font-medium">Home</a>
+            <a
+              href="#properties"
+              class="text-gray-600 hover:text-primary transition-all"
+              >Properties</a
+            >
+            <a
+              href="#services"
+              class="text-gray-600 hover:text-primary transition-all"
+              >Services</a
+            >
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-primary transition-all"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-600 hover:text-primary transition-all"
+              >Contact</a
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="
+                hidden
+                md:block
+                px-4
+                py-2
+                rounded-md
+                text-primary
+                border border-primary
+                hover:bg-primary hover:text-white
+                transition-all
+              "
+            >
+              Login
+            </button>
+            <button
+              class="
+                hidden
+                md:block
+                px-4
+                py-2
+                rounded-md
+                bg-primary
+                text-white
+                hover:bg-opacity-90
+                transition-all
+              "
+            >
+              Sign Up
+            </button>
+            <button
+              id="mobile-menu-button"
+              class="md:hidden text-gray-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <a href="#home" class="block py-2 text-primary font-medium">Home</a>
+          <a
+            href="#properties"
+            class="block py-2 text-gray-600 hover:text-primary transition-all"
+            >Properties</a
+          >
+          <a
+            href="#services"
+            class="block py-2 text-gray-600 hover:text-primary transition-all"
+            >Services</a
+          >
+          <a
+            href="#about"
+            class="block py-2 text-gray-600 hover:text-primary transition-all"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-600 hover:text-primary transition-all"
+            >Contact</a
+          >
+          <div class="mt-4 space-y-3">
+            <button
+              class="
+                w-full
+                px-4
+                py-2
+                rounded-md
+                text-primary
+                border border-primary
+                hover:bg-primary hover:text-white
+                transition-all
+              "
+            >
+              Login
+            </button>
+            <button
+              class="
+                w-full
+                px-4
+                py-2
+                rounded-md
+                bg-primary
+                text-white
+                hover:bg-opacity-90
+                transition-all
+              "
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-32">
+      <div class="container mx-auto px-6">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Find Your Perfect Rental Home
+          </h1>
+          <p class="text-xl mb-8 opacity-90">
+            Discover premium properties in the most desirable locations with
+            WealthHome's exclusive rental service.
+          </p>
+          <button
+            class="
+              px-8
+              py-3
+              bg-primary
+              text-white
+              rounded-lg
+              font-semibold
+              hover:bg-opacity-90
+              transition-all
+            "
+          >
+            Browse Properties
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="bg-white py-8 -mt-16 z-10 relative">
+      <div class="container mx-auto px-6">
+        <div class="bg-white rounded-xl p-6 search-card">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div>
+              <label class="block text-gray-700 mb-2">Location</label>
+              <select
+                class="
+                  w-full
+                  px-4
+                  py-3
+                  border border-gray-300
+                  rounded-lg
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-primary
+                  focus:border-transparent
+                "
+              >
+                <option>Select City</option>
+                <option>Karachi</option>
+                <option>Islamabad</option>
+                <option>Lahore</option>
+                <option>Quetta</option>
+                <option>Peshawer</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Property Type</label>
+              <select
+                class="
+                  w-full
+                  px-4
+                  py-3
+                  border border-gray-300
+                  rounded-lg
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-primary
+                  focus:border-transparent
+                "
+              >
+                <option>All Types</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Villa</option>
+                <option>Condo</option>
+                <option>Townhouse</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Price Range</label>
+              <select
+                class="
+                  w-full
+                  px-4
+                  py-3
+                  border border-gray-300
+                  rounded-lg
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-primary
+                  focus:border-transparent
+                "
+              >
+                <option>Any Price</option>
+                <option>Rs.270000 - Rs.470000</option>
+                <option>Rs.370000 - Rs.570000</option>
+                <option>Rs.600000+</option>
+              </select>
+            </div>
+            <div class="flex items-end">
+              <button
+                class="
+                  w-full
+                  px-6
+                  py-3
+                  bg-primary
+                  text-white
+                  rounded-lg
+                  font-semibold
+                  hover:bg-opacity-90
+                  transition-all
+                "
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Featured Properties
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Our curated selection of premium rental homes
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Property 1 -->
+          <div
+            class="
+              property-card
+              bg-white
+              rounded-xl
+              overflow-hidden
+              transition-all
+            "
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Modern Apartment"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="
+                  absolute
+                  top-4
+                  right-4
+                  bg-primary
+                  text-white
+                  px-3
+                  py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                "
+              >
+                Featured
+              </div>
+              <div
+                class="
+                  absolute
+                  bottom-4
+                  left-4
+                  bg-white
+                  text-primary
+                  px-3
+                  py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                "
+              >
+                Rs. 30000/mo
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Modern Downtown Apartment
+              </h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Gulberg ,Karachi</span>
+              </div>
+              <div
+                class="flex justify-between border-b border-gray-200 pb-4 mb-4"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-bed mr-2 text-primary"></i>
+                  <span>2 Beds</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-bath mr-2 text-primary"></i>
+                  <span>2 Baths</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-ruler-combined mr-2 text-primary"></i>
+                  <span>1,200 sqft</span>
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  py-2
+                  border border-primary
+                  text-primary
+                  rounded-lg
+                  font-medium
+                  hover:bg-primary hover:text-white
+                  transition-all
+                "
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div
+            class="
+              property-card
+              bg-white
+              rounded-xl
+              overflow-hidden
+              transition-all
+            "
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Luxury Villa"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="
+                  absolute
+                  bottom-4
+                  left-4
+                  bg-white
+                  text-primary
+                  px-3
+                  py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                "
+              >
+                Rs. 400000 /mo
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Luxury Beachfront Villa
+              </h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Lal Qela , Lahore</span>
+              </div>
+              <div
+                class="flex justify-between border-b border-gray-200 pb-4 mb-4"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-bed mr-2 text-primary"></i>
+                  <span>4 Beds</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-bath mr-2 text-primary"></i>
+                  <span>3 Baths</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-ruler-combined mr-2 text-primary"></i>
+                  <span>2,800 sqft</span>
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  py-2
+                  border border-primary
+                  text-primary
+                  rounded-lg
+                  font-medium
+                  hover:bg-primary hover:text-white
+                  transition-all
+                "
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div
+            class="
+              property-card
+              bg-white
+              rounded-xl
+              overflow-hidden
+              transition-all
+            "
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Cozy Townhouse"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="
+                  absolute
+                  top-4
+                  right-4
+                  bg-secondary
+                  text-white
+                  px-3
+                  py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                "
+              >
+                New
+              </div>
+              <div
+                class="
+                  absolute
+                  bottom-4
+                  left-4
+                  bg-white
+                  text-primary
+                  px-3
+                  py-1
+                  rounded-full
+                  text-sm
+                  font-semibold
+                "
+              >
+                Rs. 420000/mo
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Cozy Urban Townhouse</h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Zeyarat, Quetta</span>
+              </div>
+              <div
+                class="flex justify-between border-b border-gray-200 pb-4 mb-4"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-bed mr-2 text-primary"></i>
+                  <span>3 Beds</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-bath mr-2 text-primary"></i>
+                  <span>2 Baths</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-ruler-combined mr-2 text-primary"></i>
+                  <span>1,500 sqft</span>
+                </div>
+              </div>
+              <button
+                class="
+                  w-full
+                  py-2
+                  border border-primary
+                  text-primary
+                  rounded-lg
+                  font-medium
+                  hover:bg-primary hover:text-white
+                  transition-all
+                "
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="
+              px-8
+              py-3
+              border border-primary
+              text-primary
+              rounded-lg
+              font-semibold
+              hover:bg-primary hover:text-white
+              transition-all
+            "
+          >
+            View All Properties
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="services" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Why Choose WealthHome
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Premium service for discerning renters
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div
+              class="
+                w-14
+                h-14
+                bg-primary bg-opacity-10
+                rounded-lg
+                flex
+                items-center
+                justify-center
+                mb-6
+              "
+            >
+              <i class="fas fa-home text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Curated Properties</h3>
+            <p class="text-gray-600">
+              We hand-select only the finest properties that meet our exacting
+              standards for quality, location, and amenities.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div
+              class="
+                w-14
+                h-14
+                bg-secondary bg-opacity-10
+                rounded-lg
+                flex
+                items-center
+                justify-center
+                mb-6
+              "
+            >
+              <i class="fas fa-user-shield text-secondary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">VIP Treatment</h3>
+            <p class="text-gray-600">
+              Enjoy white-glove service from our dedicated rental specialists
+              who handle every detail of your leasing process.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div
+              class="
+                w-14
+                h-14
+                bg-accent bg-opacity-10
+                rounded-lg
+                flex
+                items-center
+                justify-center
+                mb-6
+              "
+            >
+              <i class="fas fa-hand-holding-usd text-accent text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Flexible Terms</h3>
+            <p class="text-gray-600">
+              From short-term to long-term leases, we offer flexible rental
+              options to suit your unique living situation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            What Our Clients Say
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Hear from our satisfied renters
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "WealthHome found me the perfect downtown apartment when I
+              relocated for work. Their service was impeccable and they handled
+              everything from virtual tours to lease signing."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Sarah Johnson"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <div class="font-semibold">Sarah Khan</div>
+                <div class="text-gray-500 text-sm">Executive, Karachi</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "As a frequent relocator, I've used many rental services.
+              WealthHome stands out for their attention to detail and premium
+              property selection."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Michael Chen"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <div class="font-semibold">Daniyal Munawer</div>
+                <div class="text-gray-500 text-sm">Consultant, Quetta</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "The beachfront villa we rented through WealthHome exceeded all
+              expectations. Their local knowledge helped us find the perfect
+              seasonal rental."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="David Rodriguez"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <div class="font-semibold">Meryum Rajpot</div>
+                <div class="text-gray-500 text-sm">Entrepreneur, Lahore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="WealthHome Team"
+              class="rounded-xl shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">
+              About WealthHome
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Founded in 2015, WealthHome has redefined luxury rentals by
+              combining premium properties with exceptional service. Our team of
+              real estate experts personally inspects every property to ensure
+              it meets our high standards.
+            </p>
+            <p class="text-gray-600 mb-8">
+              We specialize in serving discerning clients who value quality,
+              privacy, and convenience. Whether you need a temporary residence
+              during relocation, a seasonal getaway, or a long-term luxury home,
+              we have the perfect solution.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-3xl font-bold text-primary mb-2">1,200+</div>
+                <div class="text-gray-600">Premium Properties</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-secondary mb-2">98%</div>
+                <div class="text-gray-600">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Find Your Dream Rental?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          Join thousands of satisfied clients who found their perfect home
+          through WealthHome.
+        </p>
+        <button
+          class="
+            px-8
+            py-3
+            bg-white
+            text-primary
+            rounded-lg
+            font-semibold
+            hover:bg-opacity-90
+            transition-all
+          "
+        >
+          Browse Properties
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Contact Us
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Our team is ready to assist you
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="
+                    w-full
+                    px-4
+                    py-3
+                    border border-gray-300
+                    rounded-lg
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-primary
+                    focus:border-transparent
+                  "
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="
+                    w-full
+                    px-4
+                    py-3
+                    border border-gray-300
+                    rounded-lg
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-primary
+                    focus:border-transparent
+                  "
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 mb-2"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="
+                    w-full
+                    px-4
+                    py-3
+                    border border-gray-300
+                    rounded-lg
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-primary
+                    focus:border-transparent
+                  "
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="
+                    w-full
+                    px-4
+                    py-3
+                    border border-gray-300
+                    rounded-lg
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-primary
+                    focus:border-transparent
+                  "
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="
+                  px-8
+                  py-3
+                  bg-primary
+                  text-white
+                  rounded-lg
+                  font-semibold
+                  hover:bg-opacity-90
+                  transition-all
+                "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-xl h-full">
+              <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="text-primary mr-4 mt-1">
+                    <i class="fas fa-map-marker-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">Address</h4>
+                    <p class="text-gray-600">
+                      Dolmin Mall,Hyderi North Nazimabad Karachi
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="text-primary mr-4 mt-1">
+                    <i class="fas fa-phone-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">Phone</h4>
+                    <p class="text-gray-600">+92 330215465</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="text-primary mr-4 mt-1">
+                    <i class="fas fa-envelope text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">Email</h4>
+                    <p class="text-gray-600">info@wealthhome.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="text-primary mr-4 mt-1">
+                    <i class="fas fa-clock text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium mb-1">Hours</h4>
+                    <p class="text-gray-600">Monday - Friday: 8am - 8pm</p>
+                    <p class="text-gray-600">Saturday: 10am - 6pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="text-2xl font-bold text-white mb-4">
+              Wealth<span class="text-secondary">Home</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Premium rental homes for discerning clients.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Properties</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Karachi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Islamabad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Quetta</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Peshawer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Lahore</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Luxury Rentals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Corporate Housing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Seasonal Rentals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Relocation Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Property Management</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 WealthHome. All rights reserved. |
+            <a href="#" class="hover:text-white transition-all"
+              >Privacy Policy</a
+            >
+            |
+            <a href="#" class="hover:text-white transition-all"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
